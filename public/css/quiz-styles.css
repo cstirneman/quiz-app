@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: lightblue;
+}
+
+main {
+    flex: 1; /* Allows main content to take up the remaining space */
+}
+
+.container{
+    background-color: white;
+    width: 90%;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.container h1{
+    font-size: 25px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.quiz-content h2{
+    margin: 20px;
+}
+
+.answers{
+    width: 100%;
+    margin: 5px;
+    text-align: left;
+    font-size: 12pt;
+}
+
+button{
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.quiz-content button:hover{
+    background-color: lightblue;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 20px; /* Add some space from the top */
+}
+
+#next-btn, #finish-btn{
+    background-color: lightblue;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none;
+}
+
+.selectedAnswer{
+    background-color: darkgray;
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .footer-container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* Small devices (mobiles, max width 600px) */
+@media (max-width: 767px){
+    .container{
+        background-color: white;
+        width: 90%;
+        margin: 50px auto 0;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 5px;
+    }
+    
+    .quiz-content h2{
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    #next-btn, #finish-btn{
+        background-color: lightblue;
+        font-size: 12pt;
+        font-weight: bold;
+        padding: 0px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, max width 768px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}

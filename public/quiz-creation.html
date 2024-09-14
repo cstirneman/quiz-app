@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz || Quiz Creation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/quiz-creation-styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Simple Quiz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quiz-creation.html">Create</a></li>
+                    <li><a href="study.html">Study</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="message">
+                <h1>Let's begin creating your quiz!</h1>
+            </div>
+
+            <div class="quiz-creation">
+                <div class="quiz-name-creation">
+                    <h2 id="quiz-name">Quiz Name</h2>
+                    <input type="text" id="quiz-name-text-field" placeholder="Add your quiz name">
+                </div>
+                <div class="question-creation">
+                    <h2>Add a question</h2>
+                    <textarea name="question" id="question" placeholder="Add your question here"></textarea>
+                </div>
+                <div id="answer-creation" >
+                    <button id="add-answer-btn">Add Answers +</button>
+                    <h3>Check Correct</h3>
+                </div>
+                <button class="next-finish-btn" id="next-question-btn">Next Question</button>
+                <button class="next-finish-btn" id="finish-btn">Finish</button>           
+            </div>
+
+            <div class="help-instructions">
+                <button id="help-instructions-btn">Need help?</button>
+                <ol id="instructions-list">
+                    <li>First start by adding your quiz name in the designated text field</li>
+                    <li>Type your question in the question text field</li>
+                    <li>Click the "Add Answers" button to add an answer</li>
+                    <li>Click the checkbox to the right to mark a question as correct</li>
+                    <li>Click the "Next Question" button to add another question to your quiz, or click "Finish" to save your quiz</li>
+                    <button id="close-instructions-btn">Close Instructions</button>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Simple Quiz. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+<script type="module" src="js/quiz-creation.js"></script>
+</body>
+</html>

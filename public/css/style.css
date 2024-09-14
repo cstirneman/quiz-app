@@ -1,0 +1,193 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content Styling */
+main {
+    width: 100%;
+    background-color: #fff;
+    background-image: url(../images/mountain-background.jpg);
+    background-size: cover;           /* Ensures the image covers the entire container */
+    background-repeat: no-repeat;     /* Prevents the image from repeating */
+    background-position: center;    
+    padding: 250px;  /* Adjust the padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .welcome-message {
+    text-align: center;
+    color: #fff; /* Change text color to contrast with background */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background */
+    border-radius: 10px;
+}
+
+main .welcome-message h2 {
+    font-size: 2.5rem;
+}
+
+main .welcome-message p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* New Section Styling */
+#extra-content {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#extra-content .extra-content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#extra-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#extra-content p {
+    font-size: 1.2rem;
+    color: #667;
+}
+
+.quiz-steps-container{
+    display: flex;
+    margin-top: 10px;
+}
+.quiz-steps-container p{
+    margin: 10px 15px 0 0;
+    border-right: 2px solid black;
+}
+
+.quiz-steps-container p:last-child{
+    border-right: none;
+}
+
+.quiz-steps-container a{
+    color: inherit;
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+    width: 100%;
+}
+
+footer .footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tablet Styles - Between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        padding: 300px 20px; /* Reduce padding for smaller screens */
+    }
+
+    main .welcome-message h2 {
+        font-size: 3rem;
+    }
+
+    main .welcome-message p {
+        font-size: 1.5rem;
+    }
+
+    #extra-content h2 {
+        font-size: 2.5rem;
+    }
+
+    #extra-content p {
+        font-size: 1.5rem;
+    }
+
+    .quiz-steps-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: stretch;
+    }
+
+    .quiz-steps-container p {
+        margin: 10px 0;
+        border-right: 2px solid black;
+        padding: 10px 5px 0 5px;
+        width: 100%; /* Full width for each item */
+        text-align: center;
+    }
+
+    .quiz-steps-container p:last-child{
+        border-right: none;
+    }
+
+    footer .footer-container p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Styles - 767px and below */
+@media (max-width: 767px) {
+    main {
+        padding: 200px 20px;
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    main .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+
+    main .welcome-message p {
+        font-size: 1rem;
+    }
+
+    #extra-content h2 {
+        font-size: 1.5rem;
+    }
+
+    #extra-content p {
+        font-size: 1rem;
+    }
+
+    .quiz-steps-container {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+    }
+
+    .quiz-steps-container p {
+        margin: 10px 0;
+        border-right: 1px solid black;
+        padding:10px 5px 0 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #third-step{
+        border-right: none;
+    }
+
+    footer .footer-container p {
+        font-size: 0.8rem;
+    }
+}

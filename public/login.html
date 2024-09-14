@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz || Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Simple Quiz</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="background-container">
+            <div class="message-container">
+                <p>Start studying with Simple Quiz. Login to your existing account or sign up today!</p>
+            </div>
+        </div>
+    
+        <!-- Login Form -->
+        <div class="login-container">
+            <h1>Login</h1>
+            <div class="form-container">
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+        </div>
+        
+        <div class="register-container" style="display:none;">
+            <h1>Register</h1>
+            <div class="form-container">
+                <form id="register-form">
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username" name="register-username" required>
+                    <br>
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                    <br>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </div>        
+    </div>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>
