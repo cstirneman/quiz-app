@@ -25,7 +25,8 @@ const db = mysql.createConnection({
     port: 3306,
     user: 'admin',
     password: 'Cardinals12!',
-    database: 'quiz_app-db'
+    database: 'quiz_app',
+    connectTimeout: 10000 // Increase timeout to 10 seconds
 });
 
 db.connect((err) => {
